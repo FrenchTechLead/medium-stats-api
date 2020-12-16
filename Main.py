@@ -20,7 +20,10 @@ def getJwt():
     c = c.split("clapCount\":")[1]
     endIndex = c.index(",")
     claps = int(c[0:endIndex])
-    return jsonify(comments="comming-soon", claps=claps)
+    c = c.split("responsesCount\":")[1]
+    endIndex = c.index(",")
+    comments = int(c[0:endIndex])
+    return jsonify(comments=comments, claps=claps)
 
 
 api = Api(app)
