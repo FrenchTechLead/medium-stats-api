@@ -8,11 +8,6 @@ app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 
-@app.route('/')
-def hello():
-    return "HELLO"
-
-
 @app.route('/api/stats', methods=['GET'])
 def getJwt():
     story_url = request.args.get('story_url')
