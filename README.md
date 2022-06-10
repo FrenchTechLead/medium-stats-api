@@ -6,7 +6,7 @@ We created this API that makes it possible to retrieve stats of a specefic mediu
 # USAGE
 REQUEST :
 
-```GET: http:///localhost:8080/api/stats?story_url=THE_URL_OF_THE_MEDIUM_STORY```
+```GET: http://localhost:8080/api/stats?story_url=THE_URL_OF_THE_MEDIUM_STORY```
 
 RESPONSE :
 ``` JSON 
